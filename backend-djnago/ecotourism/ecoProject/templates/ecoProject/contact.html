@@ -1,0 +1,74 @@
+{% extends "ecoProject/base.html" %}
+{% load static %}
+{% block content %}
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');">
+      <div class="slide-content">
+        <h1>contact us</h1>
+      </div>
+    </div>
+  </div>
+
+        <div class="map-contact">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.994981259857!2d133.9344!3d34.6551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355406a1d3a2b8a5%3A0x2e86d4d7b35ed40c!2sOkayama%20Station!5e0!3m2!1sen!2sjp!4v1692000000000!5m2!1sen!2sjp"
+                class="map"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+              <!-- Success/Error messages -->
+  {% if messages %}
+    {% for message in messages %}
+      <p class="success-message">{{ message }}</p>
+    {% endfor %}
+  {% endif %}
+
+            <form class="contact-form" method="post" action="{% url 'contact' %}">
+                {% csrf_token %}
+               
+                
+                <div class="form-group">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName" name="first_name" placeholder="Please enter first name..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName" name="last_name" placeholder="Please enter last name..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Please enter email..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Please enter phone number..." required>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">PLEASE GIVE YOUR FEEDBACK</label>
+                    <textarea id="message" name="message" placeholder="Please enter feedback..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+  
+ 
+ <script>
+    setTimeout(() => {
+    const msg = document.querySelector('.success-message');
+    if (msg) {
+      msg.style.display = 'none';
+    }
+  }, 4000); 
+</script> 
+{% endblock %}
+</body>
+</html>

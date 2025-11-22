@@ -1,0 +1,61 @@
+{% extends "ecoProject/base.html" %}
+{% load static %}
+{% block content %}
+  <!-- Hero -->
+  <div class="hero">
+    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');">
+      <div class="slide-content">
+        <h1>About us</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Goals Section -->
+  <div class="goals-section">
+    <h2 class="main-title">Goals</h2>
+    <div class="goals-grid">
+
+      <div class="goal-item">
+        <img src="{% static "assets/img/goal1.jpg" %}" alt="Global Network" class="goal-img">
+        <p class="goal-number">01.</p>
+        <h3 class="goal-title">Develop a Global Sustainable Tourism Network</h3>
+        <p class="goal-description">Create an extensive network that connects travelers with ecotourism and sustainable tourism destinations worldwide, facilitating enriching and responsible travel experiences, with the goal of reducing the existing carbon footprint.</p>
+      </div>
+
+      <div class="goal-item">
+        <img src="{% static "assets/img/goal2.jpg" %}" alt="Technology" class="goal-img">
+        <p class="goal-number">02.</p>
+        <h3 class="goal-title">Integrate Technological Solutions in Tourism</h3>
+        <p class="goal-description">Implement and optimize an advanced technological platform to improve travel planning and booking, focusing on sustainability and the user experience.</p>
+      </div>
+
+      <div class="goal-item">
+        <img src="{% static "assets/img/goal3.jpeg" %}" alt="Eco Experience" class="goal-img">
+        <p class="goal-number">03.</p>
+        <h3 class="goal-title">Innovate in Ecotourism Experiences</h3>
+        <p class="goal-description">Develop and offer unique ecotourism experiences, promoting responsible tourism and connection with nature.</p>
+      </div>
+
+      <div class="goal-item">
+        <img src="{% static "assets/img/goal4.png" %}" alt="Local Economy" class="goal-img">
+        <p class="goal-number">04.</p>
+        <h3 class="goal-title">Promote Local Economic Development</h3>
+        <p class="goal-description">Support local economies in ecotourism destinations, contributing to economic development and empowerment of vulnerable communities.</p>
+      </div>
+      <div class="goal-item">
+        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Local Economy" class="goal-img">
+        <p class="goal-number">05.</p>
+        <h3 class="goal-title">Promote Local Economic Development</h3>
+        <p class="goal-description">Support local economies in ecotourism destinations, contributing to economic development and empowerment of vulnerable communities.</p>
+      </div>
+      <div class="goal-item">
+        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Local Economy" class="goal-img">
+        <p class="goal-number">06.</p>
+        <h3 class="goal-title">Promote Local Economic Development</h3>
+        <p class="goal-description">Support local economies in ecotourism destinations, contributing to economic development and empowerment of vulnerable communities.</p>
+      </div>
+
+    </div>
+  </div>
+  
+{% endblock %}

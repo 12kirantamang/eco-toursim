@@ -1,0 +1,63 @@
+{% extends "ecoProject/base.html" %}
+{% load static %}
+{% block content %}
+    <div class="ties-container">
+        <div class="left-panel">
+            <h1>Promoting Local Development and Sustainability🌿</h1>
+            <h3>A key aspect of GreenCollab Travel mission is to boost the economy of vulnerable local areas. </h3>
+            <p>Through short and responsible trips, we promote the economic growth of small communities, supporting local entrepreneurs, with a special focus on empowering women and youth. Our company is committed to minimizing the carbon footprint and encouraging eco-friendly practices in avery aspect of the journey, thus contributing to environmental sustainability</p>
+
+            <div class="buttons-container">
+                <a href="#" class="find-out-more">Find Out More</a>
+            </div>
+        </div>
+        <div class="right-panel">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80"
+                alt="Scenic forest view">
+        </div>
+    </div>
+
+    <!-- activities section -->
+    <section class="eco-activities">
+        <h2 class="eco-activities__title">Eco-Friendly Experiences & Activities</h2>
+        <p>Eco-tourism in Okayama isn't just about sightseeing — it's about slowing down, connecting with the land, and
+            experiencing the local way of life in harmony with nature. Here are some activities that invite you to
+            travel gently and meaningfully:</p>
+
+        <div class="eco-activities__list">
+            <div class="eco-activity">
+                <h3 class="eco-activity__title">🚲 Cycling Adventures</h3>
+                <p class="eco-activity__description">
+                 Discover Okayama at your own pace by bike. The region is known for its scenic cycling routes, including parts of the world-famous Shimanami Kaidō, a route that links Honshu to Shikoku with breathtaking views of the Seto Inland Sea. Ride through peaceful countryside roads, across bridges that span glittering waters, and into charming villages where time seems to move more slowly.
+                </p>
+                <img src="{% static "assets/img/cycling.jpg" %}" alt="Cycling in nature">
+            </div>
+
+            <div class="eco-activity">
+                <h3 class="eco-activity__title">🌾 Farm Stays & Agricultural Experiences</h3>
+                <p class="eco-activity__description">
+                Step into the shoes of a local farmer and enjoy a hands-on experience in Okayama's fertile fields. From planting rice to harvesting sweet peaches and Muscat grapes, you'll gain a new appreciation for the food on your table. Many farm stays also welcome guests into traditional homes, offering warm hospitality and a taste of authentic rural life.
+                </p>
+                <img src="{% static "assets/img/Farm Stays & Agricultural.jpg" %}" alt="Farm experience">
+            </div>
+
+            <div class="eco-activity">
+                <h3 class="eco-activity__title">🐦 Birdwatching</h3>
+                <p class="eco-activity__description">
+                  With its rivers, wetlands, and lush mountains, Okayama is home to a wide range of birds — from elegant herons to colorful kingfishers. Birdwatching here is more than just spotting species; it's a peaceful way to reconnect with nature, observe seasonal migrations, and appreciate the fragile balance of local ecosystems.
+                </p>
+                <img src="{% static "assets/img/bird.jpg" %}" alt="Birdwatching">
+            </div>
+
+            <div class="eco-activity">
+                <h3 class="eco-activity__title">🌱 Guided Nature Tours</h3>
+                <p class="eco-activity__description">
+                See Okayama through the eyes of a local eco-guide. These guided walks and hikes take you into the hidden corners of the region — quiet forests, mountain paths, and coastal trails. Along the way, guides share stories of local plants, traditions, and conservation efforts, helping you build a deeper bond with the land and its people.
+                </p>
+                <img src="{% static "assets/img/guid.jpg" %}" alt="Nature tour">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+{% endblock %}
